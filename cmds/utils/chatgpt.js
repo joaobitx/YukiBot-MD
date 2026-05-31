@@ -62,6 +62,8 @@ export default {
     if (!text) {
       return msg.reply(`《✧》 Escriba una *petición* para que *ChatGPT* le responda.`);
     }
+    const botId = sock.user.id.split(':')[0] + '@s.whatsapp.net';
+    const settings = global.db.data.settings[botId];
     const user = global.db.data.users[msg.sender];
     const username = user?.name || 'usuario';
     const botname = settings.botname || 'Bot';
