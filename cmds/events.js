@@ -1,4 +1,4 @@
-import { normalizeJid, resolveParticipantJid, resolveJidSync, deleteCachedMeta } from '#serialize';
+import { normalizeJid, resolveParticipantJid, resolveJidSync, deleteCachedMeta, getCachedMeta, setCachedMeta } from '#serialize';
 import chalk from 'chalk';
 import moment from 'moment-timezone';
 
@@ -14,10 +14,19 @@ function resolveEventParticipant(p, sock) {
 export default async (sock, msg) => {
   sock.ev.on('group-participants.update', async (anu) => {
     try {
-      if (['remove', 'leave', 'promote', 'demote'].includes(anu.action)) {
+      if (['add', 'remove', 'leave', 'promote', 'demote'].includes(anu.action)) {
         deleteCachedMeta(anu.id);
       }
-      const metadata = await sock.groupMetadata(anu.id).catch(() => null);
+      const metadata = await (async () => {
+        const cached = getCachedMeta(anu.id);
+        if (cached) return cached;
+        for (let i = 0; i < 3; i++) {
+          const m = await sock.groupMetadata(anu.id).catch(() => null);
+          if (m) { setCachedMeta(anu.id, m); return m; }
+          await new Promise(r => setTimeout(r, 1500));
+        }
+        return null;
+      })();
       const groupAdmins = metadata ? getGroupAdmins(metadata.participants) : [];
       const botId = sock.user.id.split(':')[0] + '@s.whatsapp.net';
       const chat = global.db.data.chats[anu.id] || {};
