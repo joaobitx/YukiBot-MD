@@ -1,0 +1,518 @@
+{
+  "users": {
+    "50493059810@s.whatsapp.net": {
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "50498273976@s.whatsapp.net": {
+      "name": "ẉa.me/ado",
+      "exp": 1547,
+      "level": 3,
+      "usedcommands": 31,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 576,
+      "maxxp": 2533
+    },
+    "573135180876@s.whatsapp.net": {
+      "name": "wa.me/DuarteXV.xyz",
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "51980634177@s.whatsapp.net": {
+      "name": "WilmerDelgado",
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "281454206578757@lid": {
+      "name": "⛓️꧁ 🌹𝑳𝒊𝒏𝒅𝒂.ℒ𝒦 ꧂⛓️",
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "573196588149@s.whatsapp.net": {
+      "name": "I'm Destroy ~",
+      "exp": 2606,
+      "level": 4,
+      "usedcommands": 51,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 2534,
+      "maxxp": 7999,
+      "claimMessage": "",
+      "weeklyStreak": 1,
+      "lastWeeklyGlobal": 1780160353518
+    },
+    "5493873655135@s.whatsapp.net": {
+      "name": "Farguts. `",
+      "exp": 28,
+      "level": 0,
+      "usedcommands": 1,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "584226480049@s.whatsapp.net": {
+      "name": "Sebastián Barboza",
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "29382039105742@lid": {
+      "name": "X《<[anónimo]>》X(•=•gπ|)",
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    },
+    "249834606977085@lid": {
+      "name": "Jamal Musiala 10...",
+      "exp": 0,
+      "level": 0,
+      "usedcommands": 0,
+      "pasatiempo": "",
+      "description": "",
+      "marry": "",
+      "genre": "",
+      "birth": "",
+      "metadatos": null,
+      "metadatos2": null,
+      "minxp": 0,
+      "maxxp": 0
+    }
+  },
+  "chats": {
+    "50493059810@s.whatsapp.net": {
+      "users": {
+        "50493059810@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 14,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        }
+      },
+      "isBanned": false,
+      "welcome": false,
+      "goodbye": false,
+      "sWelcome": "",
+      "sGoodbye": "",
+      "nsfw": false,
+      "alerts": true,
+      "gacha": true,
+      "economy": true,
+      "adminonly": false,
+      "primaryBot": null,
+      "antilinks": true,
+      "antistatus": false,
+      "rolls": {}
+    },
+    "50498273976@s.whatsapp.net": {
+      "users": {
+        "50498273976@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 4,
+              "cmds": 1
+            }
+          },
+          "usedTime": "2026-05-30T16:08:02.592Z",
+          "lastCmd": 1780157282592,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        }
+      },
+      "isBanned": false,
+      "welcome": false,
+      "goodbye": false,
+      "sWelcome": "",
+      "sGoodbye": "",
+      "nsfw": false,
+      "alerts": true,
+      "gacha": true,
+      "economy": true,
+      "adminonly": false,
+      "primaryBot": null,
+      "antilinks": true,
+      "antistatus": false,
+      "rolls": {}
+    },
+    "120363428225834180@g.us": {
+      "users": {
+        "50498273976@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 14,
+              "cmds": 13
+            }
+          },
+          "usedTime": "2026-05-30T20:29:31.742Z",
+          "lastCmd": 1780172971742,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        }
+      },
+      "isBanned": false,
+      "welcome": false,
+      "goodbye": false,
+      "sWelcome": "",
+      "sGoodbye": "",
+      "nsfw": false,
+      "alerts": true,
+      "gacha": true,
+      "economy": true,
+      "adminonly": false,
+      "primaryBot": null,
+      "antilinks": true,
+      "antistatus": false,
+      "rolls": {}
+    },
+    "120363428735978244@g.us": {
+      "users": {
+        "50498273976@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 33,
+              "cmds": 17
+            }
+          },
+          "usedTime": "2026-05-31T01:22:19.119Z",
+          "lastCmd": 1780190539119,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": [
+            "669839"
+          ]
+        },
+        "573135180876@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 3,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        },
+        "573196588149@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 67,
+              "cmds": 51
+            }
+          },
+          "usedTime": "2026-05-30T22:25:18.735Z",
+          "lastCmd": 1780179918735,
+          "coins": 4070,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": [],
+          "lastcrime": 1780159866182,
+          "lastwork": 1780160337170,
+          "lastRoll": 1780160780957,
+          "lastClaim": 1780161685447,
+          "lastweekly": 1780765153518,
+          "laststeal": 0,
+          "lastslut": 1780160716753,
+          "lastmine": 0,
+          "lastinvoke": 0,
+          "lasthunt": 0,
+          "lastfish": 0,
+          "lastcoffer": 0,
+          "lastdungeon": 0,
+          "lastadventure": 0,
+          "lastdaily": 0,
+          "lastmonthly": 0,
+          "lastppt": 1780160442093
+        },
+        "5493873655135@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 5,
+              "cmds": 1
+            }
+          },
+          "usedTime": "2026-05-30T20:58:37.038Z",
+          "lastCmd": 1780174717038,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        }
+      },
+      "isBanned": false,
+      "welcome": false,
+      "goodbye": false,
+      "sWelcome": "",
+      "sGoodbye": "",
+      "nsfw": 1,
+      "alerts": true,
+      "gacha": true,
+      "economy": true,
+      "adminonly": false,
+      "primaryBot": null,
+      "antilinks": true,
+      "antistatus": false,
+      "rolls": {},
+      "regalosPendientes": []
+    },
+    "120363424103928015@g.us": {
+      "users": {
+        "51980634177@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 1,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        },
+        "281454206578757@lid": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 1,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        },
+        "584226480049@s.whatsapp.net": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 1,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        },
+        "29382039105742@lid": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 1,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        },
+        "249834606977085@lid": {
+          "stats": {
+            "2026-05-30": {
+              "msgs": 1,
+              "cmds": 0
+            }
+          },
+          "usedTime": null,
+          "lastCmd": 0,
+          "coins": 0,
+          "bank": 0,
+          "afk": -1,
+          "afkReason": "",
+          "health": 100,
+          "stamina": 100,
+          "magic": 100,
+          "characters": []
+        }
+      },
+      "isBanned": false,
+      "welcome": false,
+      "goodbye": false,
+      "sWelcome": "",
+      "sGoodbye": "",
+      "nsfw": false,
+      "alerts": true,
+      "gacha": true,
+      "economy": true,
+      "adminonly": false,
+      "primaryBot": null,
+      "antilinks": true,
+      "antistatus": false,
+      "rolls": {}
+    }
+  },
+  "settings": {
+    "50493059810@s.whatsapp.net": {
+      "self": false,
+      "prefix": [
+        "/",
+        "!",
+        ".",
+        "#"
+      ],
+      "commandsejecut": 83,
+      "newsletter_id": "120363401404146384@newsletter",
+      "nameid": "ೃ࿔ ყµҡเ ωαɓσƭร - σƒƒเ૮เαℓ ૮ɦαɳɳεℓ .ೃ࿐",
+      "type": "Owner",
+      "link": "https://api.yuki-wabot.my.id",
+      "banner": "https://cdn.yuki-wabot.my.id/files/tCVD.jpeg",
+      "icon": "https://cdn.yuki-wabot.my.id/files/4U5V.jpeg",
+      "currency": "Yenes",
+      "namebot": "pene",
+      "botname": "pene",
+      "owner": ""
+    }
+  },
+  "characters": {
+    "120363428735978244@g.us__669839": {
+      "name": "Eren Jaeger",
+      "value": 13614,
+      "votes": 0,
+      "expiresAt": 1780159940957,
+      "user": "50498273976@s.whatsapp.net",
+      "claimedAt": 1780160521282
+    }
+  },
+  "stickerspack": {},
+  "tokens": {}
+}
