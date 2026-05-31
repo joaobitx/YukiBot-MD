@@ -23,8 +23,7 @@ export default {
       info += `ׄ ﹙ׅ✿﹚ּ *Tipo* › ${tipo}\n`
       if (scraped.size) info += `ׄ ﹙ׅ✿﹚ּ *Peso* › ${scraped.size}\n`
       if (scraped.uploaded) info += `ׄ ﹙ׅ✿﹚ּ *Subido* › ${scraped.uploaded}\n`      
-      await sock.sendMessage(msg.chat, { text: info, mentions: [msg.sender] }, { quoted: msg })
-      await sock.sendMessage(msg.chat, { document: { url: scraped.downloadLink }, mimetype: tipo, fileName: title }, { quoted: msg })
+      await sock.sendMessage(msg.chat, { document: { url: scraped.downloadLink }, mimetype: tipo, fileName: title, caption: info, mentions: [msg.sender] }, { quoted: msg })
     } catch (e) {
       return msg.reply(`> An unexpected error occurred while executing command *${usedPrefix + command}*. Please try again or contact support if the issue persists.\n> [Error: *${e.message}*]`)
     }
