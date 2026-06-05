@@ -1,3 +1,4 @@
+import db from '#db';
 const formatDate = (timestamp) => {
   const date = new Date(parseInt(timestamp))
   return date.toLocaleString('es-CO', { timeZone: 'America/Bogota', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true })
@@ -9,7 +10,7 @@ export default {
   description: 'Listar tus paquetes de stickers.',
   run: async ({ msg, sock, usedPrefix, command, text }) => {
     try {
-      const stickerPackData = global.global.db.data.stickerspack[msg.sender]
+      const stickerPackData = db.getStickersPack(msg.sender)
       const packs = stickerPackData.packs || []
       if (!packs.length) {
         return msg.reply('《✧》No tienes paquetes de stickers creados.')

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import fs from 'fs';
+import db from '#db';
 
 export default {
   command: ['qc'],
@@ -13,7 +14,7 @@ export default {
       }
       let target = msg.quoted ? msg.quoted.sender : msg.sender;
       const pp = await sock.profilePictureUrl(target).catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
-      let userGlobal = global.db.data.users[target];
+      let userGlobal = db.getUser(target);
       const nombre = userGlobal?.name || target.split('@')[0];
       if (textFinal.length > 30) {
         await msg.react('✖️');
@@ -23,7 +24,7 @@ export default {
       const quoteObj = { type: 'quote', format: 'png', backgroundColor: '#000000', width: 512, height: 768, scale: 2, messages: [{ entities: [], avatar: true, from: { id: 1, name: nombre, photo: { url: pp } }, text: textFinal, replyMessage: {} }] };
       const json = await axios.post('https://bot.lyo.su/quote/generate', quoteObj, { headers: { 'Content-Type': 'application/json' }});      
       const buffer = Buffer.from(json.data.result.image, 'base64');
-      let user = global.db.data.users[msg.sender];
+      let user = db.getUser(msg.sender);
       const name = user.name || msg.sender.split('@')[0];
       const meta1 = user.metadatos ? String(user.metadatos).trim() : '';
       const meta2 = user.metadatos2 ? String(user.metadatos2).trim() : '';

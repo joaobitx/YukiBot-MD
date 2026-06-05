@@ -1,3 +1,4 @@
+import db from '#db';
 export default {
   command: ['setstickerpackdesc', 'setpackdesc', 'packdesc'],
   category: 'stickers',
@@ -20,7 +21,7 @@ export default {
       if (desc.length > 60) {
         return msg.reply('《✧》La descripción no puede tener más de 50 caracteres.')
       }
-      const stickerPackData = global.global.db.data.stickerspack[msg.sender]
+      const stickerPackData = db.getStickersPack(msg.sender)
       const packs = stickerPackData.packs || []
       if (!packs || packs.length === 0) {
         return msg.reply('《✧》No tienes paquetes creados.')
@@ -31,7 +32,7 @@ export default {
       }
       pack.desc = desc
       pack.lastModified = Date.now().toString()
-      global.global.db.data.stickerspack[msg.sender].packs = packs      
+      db.setStickersPack(msg.sender, 'packs', packs);
       msg.reply(`❀ La descripción del paquete de stickers \`${pack.name}\` ha sido actualizada!`)
     } catch (e) {
       msg.reply(`> An unexpected error occurred while executing command *${usedPrefix + command}*. Please try again or contact support if the issue persists.\n> [Error: *${e.message}*]`);

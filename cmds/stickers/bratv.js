@@ -1,5 +1,6 @@
 import axios from 'axios';
 import fs from 'fs';
+import db from '#db';
 
 const fetchStickerVideo = async (text) => {
   const response = await axios.get(`https://skyzxu-brat.hf.space/brat-animated`, { params: { text }, responseType: 'arraybuffer' });  
@@ -18,7 +19,7 @@ export default {
         return sock.reply(msg.chat, '《✧》 Por favor, responde a un mensaje o ingresa un texto para crear el Sticker.', msg);
       }
       await msg.react('🕒');
-      let user = global.db.data.users[msg.sender];
+      let user = db.getUser(msg.sender);
       const name = user.name || msg.sender.split('@')[0];
       const meta1 = user.metadatos ? String(user.metadatos).trim() : '';
       const meta2 = user.metadatos2 ? String(user.metadatos2).trim() : '';

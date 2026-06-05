@@ -1,3 +1,4 @@
+import db from '#db';
 export default {
   command: ['delpack'],
   category: 'stickers',
@@ -8,7 +9,7 @@ export default {
         return msg.reply('《✧》Especifica el nombre del paquete de stickers.')
       }
       const packName = args.join(' ').trim()
-      const stickerPackData = global.global.db.data.stickerspack[msg.sender]
+      const stickerPackData = db.getStickersPack(msg.sender)
       const packs = stickerPackData.packs || []
       if (!packs || packs.length === 0) {
         return msg.reply('《✧》No tienes paquetes creados.')
@@ -19,7 +20,7 @@ export default {
       }
       const deletedPack = packs[packIndex]
       packs.splice(packIndex, 1)
-      global.global.db.data.stickerspack[msg.sender].packs = packs      
+      db.setStickersPack(msg.sender, 'packs', packs);
       msg.reply(`❀ El paquete de stickers \`${deletedPack.name}\` ha sido eliminado.`)
     } catch (e) {
       msg.reply(`> An unexpected error occurred while executing command *${usedPrefix + command}*. Please try again or contact support if the issue persists.\n> [Error: *${e.message}*]`);

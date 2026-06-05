@@ -1,3 +1,4 @@
+import db from '#db';
 export default {
   command: ['addsticker', 'stickeradd'],
   category: 'stickers',
@@ -8,7 +9,7 @@ export default {
         return msg.reply('《✧》Especifica el nombre del paquete.')
       }
       const packName = args.join(' ').trim()
-      const stickerPackData = global.global.db.data.stickerspack[msg.sender]
+      const stickerPackData = db.getStickersPack(msg.sender)
       const packs = stickerPackData.packs || []
       if (!packs || packs.length === 0) {
         return msg.reply('《✧》No tienes paquetes creados.')
@@ -44,7 +45,7 @@ export default {
       }
       pack.stickers.push(base64Sticker)
       pack.lastModified = Date.now().toString()
-      global.global.db.data.stickerspack[msg.sender].packs = packs
+      db.setStickersPack(msg.sender, 'packs', packs);
       msg.reply(`《✧》Sticker agregado al pack \`${pack.name}\` correctamente!`)
     } catch (e) {
       msg.reply(`> An unexpected error occurred while executing command *${usedPrefix + command}*. Please try again or contact support if the issue persists.\n> [Error: *${e.message}*]`);

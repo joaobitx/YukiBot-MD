@@ -1,4 +1,5 @@
 import axios from 'axios';
+import db from '#db';
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -44,7 +45,7 @@ export default {
     try {
       if (!text) return sock.reply(msg.chat, `《✧》 Ingresa un texto para buscar packs de stickers o una URL de sticker.ly.`, msg);
       await msg.react('🕒');
-      const name = global.db.data.users[msg.sender]?.name || msg.sender.split('@')[0];
+      const name = db.getUser(msg.sender)?.name || msg.sender.split('@')[0];
       let packData;
       const stickerMatch = text.match(/(?:sticker\.ly\/s\/)([a-zA-Z0-9]+)(?:\s|$)/);
       const url = stickerMatch ? 'https://sticker.ly/s/' + stickerMatch[1] : (isStickerUrl(text) ? text : null);

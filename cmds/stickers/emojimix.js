@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
+import db from '#db';
 
 const fetchJson = (url, options) => new Promise((resolve, reject) => { fetch(url, options).then(res => res.json()).then(json => resolve(json)).catch(err => reject(err)) });
 
@@ -14,7 +15,7 @@ export default {
       }
       let [emoji1, emoji2] = text.split('+');
       await msg.react('🕒');
-      let user = global.db.data.users[msg.sender];
+      let user = db.getUser(msg.sender);
       const name = user.name || msg.sender.split('@')[0];
       const meta1 = user.metadatos ? String(user.metadatos).trim() : '';
       const meta2 = user.metadatos2 ? String(user.metadatos2).trim() : '';

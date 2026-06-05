@@ -3,6 +3,7 @@ import path from 'path';
 import { spawn } from 'child_process';
 import fetch from 'node-fetch';
 import exif from '#core/exif';
+import db from '#db';
 const { writeExif } = exif;
 
 export default {
@@ -17,7 +18,7 @@ export default {
       }      
       const quoted = msg.quoted || msg;
       const mime = (quoted.msg || quoted).mimetype || '';
-      let user = global.db.data.users[msg.sender];
+      let user = db.getUser(msg.sender);
       const name = user.name;
       const meta1 = user.metadatos ? String(user.metadatos).trim() : '';
       const meta2 = user.metadatos2 ? String(user.metadatos2).trim() : '';

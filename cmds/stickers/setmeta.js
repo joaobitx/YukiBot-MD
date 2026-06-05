@@ -1,3 +1,4 @@
+import db from '#db';
 export default {
   command: ['setstickermeta', 'setmeta'],
   category: 'stickers',
@@ -20,8 +21,8 @@ export default {
       if (!metadatos01) {
         return msg.reply('《✧》 El nombre del pack no puede estar vacío.');
       }
-      global.db.data.users[msg.sender].metadatos = metadatos01;
-      global.db.data.users[msg.sender].metadatos2 = metadatos02;
+      db.setUser(msg.sender, 'metadatos', metadatos01);
+      db.setUser(msg.sender, 'metadatos2', metadatos02);
       await sock.sendMessage(msg.chat, { text: `✎ Los metadatos de tus stickers se han actualizado correctamente.` }, { quoted: msg });
     } catch (e) {
       await msg.reply(`> An unexpected error occurred while executing command *${usedPrefix + command}*. Please try again or contact support if the issue persists.\n> [Error: *${e.message}*]`);
