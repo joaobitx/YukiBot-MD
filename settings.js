@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 global.owner = ['50763105293', '50498273976'];
 
-global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ";
+global.dev = "© ⍴᥆ᥕᥱrᥱძ ᑲᥡ joao";
 global.links = {
   api: 'https://api.yuki-wabot.my.id',
   channel: "https://whatsapp.com/channel/0029Vb64nWqLo4hb8cuxe23n",
