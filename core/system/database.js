@@ -115,7 +115,7 @@ export const defSets = {
   self: 0,
   prefix: '[\"/\",\"!\",\".\",\"#\"]',
   commandsejecut: 0,
-  newsletter_id: '120363401404146384@newsletter',
+  newsletter_id: '120363410995321279@newsletter',
   nameid: '[🌴 Jake - wabot 🐢]',
   type: 'Owner',
   link: 'https://api.yuki-wabot.my.id',
