@@ -116,14 +116,14 @@ export const defSets = {
   prefix: '[\"/\",\"!\",\".\",\"#\"]',
   commandsejecut: 0,
   newsletter_id: '120363401404146384@newsletter',
-  nameid: 'ೃ࿔ ყµҡเ ωαɓσƭร - σƒƒเ૮เαℓ ૮ɦαɳɳεℓ .ೃ࿐',
+  nameid: '[🌴 Jake - wabot 🐢]',
   type: 'Owner',
   link: 'https://api.yuki-wabot.my.id',
-  banner: 'https://cdn.yuki-wabot.my.id/files/tCVD.jpeg',
-  icon: 'https://cdn.yuki-wabot.my.id/files/4U5V.jpeg',
-  currency: 'Yenes',
-  namebot: 'Yuki',
-  botname: 'Yuki Suou',
+  banner: 'https://cdn.discordapp.com/attachments/1524918945646379095/1528897922328953014/2940cf423b42.jpg?ex=6a5ff8a6&is=6a5ea726&hm=b0e9548746947f455a3f35147a1b14ff515bff0afd3a46ffd5626f4b527568c0&',
+  icon: 'https://cdn.discordapp.com/attachments/1524918945646379095/1528897922328953014/2940cf423b42.jpg?ex=6a5ff8a6&is=6a5ea726&hm=b0e9548746947f455a3f35147a1b14ff515bff0afd3a46ffd5626f4b527568c0&',
+  currency: 'Dolares',
+  namebot: 'Jake',
+  botname: 'Jake Bot',
   owner: ''
 };
 
@@ -192,11 +192,11 @@ export function initDB() {
       nameid TEXT DEFAULT 'ೃ࿔ ყµҡเ ωαɓσƭร - σƒƒเ૮เαℓ ૮ɦαɳɳεℓ .ೃ࿐',
       type TEXT DEFAULT 'Owner',
       link TEXT DEFAULT 'https://api.yuki-wabot.my.id',
-      banner TEXT DEFAULT 'https://cdn.yuki-wabot.my.id/files/tCVD.jpeg',
-      icon TEXT DEFAULT 'https://cdn.yuki-wabot.my.id/files/4U5V.jpeg',
-      currency TEXT DEFAULT 'Yenes',
-      namebot TEXT DEFAULT 'Yuki',
-      botname TEXT DEFAULT 'Yuki Suou',
+      banner TEXT DEFAULT 'https://cdn.discordapp.com/attachments/1524918945646379095/1528897922328953014/2940cf423b42.jpg?ex=6a5ff8a6&is=6a5ea726&hm=b0e9548746947f455a3f35147a1b14ff515bff0afd3a46ffd5626f4b527568c0&',
+      icon TEXT DEFAULT 'https://cdn.discordapp.com/attachments/1524918945646379095/1528897922328953014/2940cf423b42.jpg?ex=6a5ff8a6&is=6a5ea726&hm=b0e9548746947f455a3f35147a1b14ff515bff0afd3a46ffd5626f4b527568c0&',
+      currency TEXT DEFAULT 'Dolares',
+      namebot TEXT DEFAULT 'Jake',
+      botname TEXT DEFAULT 'Jake WaBot',
       owner TEXT DEFAULT ''
     )`);
   db.exec(`CREATE TABLE IF NOT EXISTS characters (id TEXT PRIMARY KEY, data TEXT)`);
